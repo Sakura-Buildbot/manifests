@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="lllgts"
+           fetch="https://github.com/Sakura-Buildbot"
+           review="github.com"
+           revision="refs/heads/MIKU-UI" />
+		   
+  <remote  name="pe"
+           fetch="https://github.com/PixelExperience"
+           review="github.com"
+           revision="refs/heads/twelve" />
+
+  <remote name="lineage"
+          fetch="https://github.com/LineageOS"
+		  review="github.com"
+          revision="refs/heads/lineage-19.1" />
+
+  <remove-project name="android_packages_apps_Gallery2" />
+  <project path="packages/apps/Gallery2" remote="lineage" name="android_packages_apps_Gallery2" />
+  <project path="device/xiaomi/polaris" remote="lllgts" name="android_device_xiaomi_polaris" />
+  <project path="device/xiaomi/sdm845-common" remote="lllgts" name="android_device_xiaomi_sdm845-common" />
+  <project path="kernel/xiaomi/polaris" remote="lllgts" name="kernel_xiaomi_polaris" />
+  <project path="vendor/xiaomi/polaris" remote="lllgts" name="vendor_xiaomi_polaris" />
+  <project path="vendor/xiaomi/sdm845-common" remote="lllgts" name="vendor_xiaomi_sdm845-common" />
+
+  <project path="hardware/qcom-caf/sdm845/display" remote="pe" name="hardware_qcom-caf_sdm845_display" />
+  <project path="hardware/qcom-caf/sdm845/media" remote="pe" name="hardware_qcom-caf_sdm845_media" />
+  <project path="hardware/qcom-caf/sdm845/audio" remote="pe" name="hardware_qcom-caf_sdm845_audio" />
+  
+</manifest>
