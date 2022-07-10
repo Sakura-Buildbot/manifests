@@ -16,6 +16,10 @@
           revision="refs/heads/lineage-19.1" />
 
   <remove-project name="android_packages_apps_Gallery2" />
+  <remove-project name="platform_frameworks_base" />
+  <remove-project name="platform_vendor_qcom_opensource_packages_apps_Bluetooth" />
+  <project path="frameworks/base" remote="lllgts" name="platform_frameworks_base" />
+  <project path="vendor/qcom/opensource/packages/apps/Bluetooth" remote="lllgts" name="platform_vendor_qcom_opensource_packages_apps_Bluetooth" />
   <project path="packages/apps/Gallery2" remote="lineage" name="android_packages_apps_Gallery2" />
   <project path="device/xiaomi/polaris" remote="lllgts" name="android_device_xiaomi_polaris" />
   <project path="device/xiaomi/sdm845-common" remote="lllgts" name="android_device_xiaomi_sdm845-common" />
