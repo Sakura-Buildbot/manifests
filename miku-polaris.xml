@@ -4,6 +4,14 @@
            fetch="https://github.com/Sakura-Buildbot"
            review="github.com"
            revision="refs/heads/MIKU-UI" />
+
+  <remote  name="miku"
+           revision="snow"
+           fetch="https://github.com/Sakura-Buildbot" />
+
+  <remote  name="mikuland"
+	   revision="snowland"
+	   fetch="https://github.com/Sakura-Buildbot" />
 		   
   <remote  name="pe"
            fetch="https://github.com/PixelExperience"
