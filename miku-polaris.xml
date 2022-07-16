@@ -12,6 +12,10 @@
   <remote  name="mikuland"
 	   revision="snowland"
 	   fetch="https://github.com/Sakura-Buildbot" />
+
+  <remote  name="miku-game"
+	   revision="snowland-game"
+	   fetch="https://github.com/Sakura-Buildbot" />
 		   
   <remote  name="pe"
            fetch="https://github.com/PixelExperience"
@@ -29,13 +33,16 @@
   <remove-project name="platform_system_bt" />
   <remove-project name="platform_vendor_qcom_opensource_packages_apps_Bluetooth" />
   <remove-project name="platform_vendor_qcom_opensource_system_bt" />
+  <remove-project name="platform_packages_apps_Settings" />
 
-  <project path="frameworks/base" remote="lllgts" name="platform_frameworks_base" />
-  <project path="vendor/qcom/opensource/packages/apps/Bluetooth" remote="lllgts" name="platform_vendor_qcom_opensource_packages_apps_Bluetooth" />
+  <project path="frameworks/base" remote="miku-game" name="platform_frameworks_base" />
+  <project path="vendor/qcom/opensource/packages/apps/Bluetooth" remote="miku" name="platform_vendor_qcom_opensource_packages_apps_Bluetooth" />
   <project path="packages/apps/Gallery2" remote="lineage" name="android_packages_apps_Gallery2" />
-  <project path="vendor/qcom/opensource/commonsys/system/bt" remote="snow" name="platform_vendor_qcom_opensource_system_bt" />
-  <project path="system/bt" remote="snowland" name="platform_system_bt" />
-  <project path="packages/apps/Bluetooth" remote="snowland" name="platform_packages_apps_Bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" remote="miku" name="platform_vendor_qcom_opensource_system_bt" />
+  <project path="system/bt" remote="mikuland" name="platform_system_bt" />
+  <project path="packages/apps/Bluetooth" remote="mikuland" name="platform_packages_apps_Bluetooth" />
+  <project path="packages/apps/Settings" remote="miku-game" name="platform_packages_apps_Settings" />
+  <project path="packages/apps/GameSpace" remote="miku-game" name="packages_apps_GameSpace" />
 
   <project path="device/xiaomi/polaris" remote="lllgts" name="android_device_xiaomi_polaris" />
   <project path="device/xiaomi/sdm845-common" remote="lllgts" name="android_device_xiaomi_sdm845-common" />
